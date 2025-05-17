@@ -45,12 +45,12 @@ export const products = [
     id: 9,
     name: "Wireless Charger",
     price: 29.99,
-    image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    image: "https://images.unsplash.com/photo-1603674554159-b62f6febbce5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 10,
     name: "Portable SSD",
     price: 149.99,
-    image: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    image: "https://images.unsplash.com/photo-1577538926210-fc6cc624fde2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ]; 
