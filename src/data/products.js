@@ -18,12 +18,6 @@ export const products = [
     image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
   },
   {
-    id: 4,
-    name: "Coffee Maker",
-    price: 79.99,
-    image: "https://images.unsplash.com/photo-1570088935863-4a0075d1c8f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
-  },
-  {
     id: 5,
     name: "Bluetooth Speaker",
     price: 89.99,

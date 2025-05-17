@@ -11,20 +11,20 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-blue-600">ShopCart</h1>
+            <a href="/" className="text-2xl font-bold text-blue-600">MarvysMart</a>
           </div>
 
           {/* Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">Products</a>
+            <a href="/" className="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
+            <a href="#products" className="text-gray-600 hover:text-blue-600 transition-colors">Products</a>
             <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">About</a>
             <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
           </nav>
 
           {/* Cart Icon */}
           <div className="flex items-center space-x-4">
-            <div className="relative">
+            <a href="/cart" className="relative">
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 className="h-6 w-6 text-gray-600 hover:text-blue-600 transition-colors cursor-pointer" 
@@ -44,7 +44,7 @@ const Header = () => {
                   {itemCount}
                 </span>
               )}
-            </div>
+            </a>
           </div>
         </div>
       </div>

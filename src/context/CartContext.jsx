@@ -27,17 +27,32 @@ export const CartProvider = ({ children }) => {
     localStorage.setItem('cart', JSON.stringify(cartItems));
   }, [cartItems]);
 
-  const addToCart = (product) => {
+  const addToCart = (product, quantity = 1) => {
     setCartItems(prevItems => {
       const existingItem = prevItems.find(item => item.id === product.id);
+      
       if (existingItem) {
+        const newQuantity = existingItem.quantity + quantity;
+        
+        // If new quantity is 0 or negative, remove the item
+        if (newQuantity <= 0) {
+          return prevItems.filter(item => item.id !== product.id);
+        }
+        
+        // Otherwise update the quantity
         return prevItems.map(item =>
           item.id === product.id
-            ? { ...item, quantity: item.quantity + 1 }
+            ? { ...item, quantity: newQuantity }
             : item
         );
       }
-      return [...prevItems, { ...product, quantity: 1 }];
+      
+      // If item doesn't exist and quantity is positive, add it
+      if (quantity > 0) {
+        return [...prevItems, { ...product, quantity }];
+      }
+      
+      return prevItems;
     });
   };
 
