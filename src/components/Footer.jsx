@@ -28,10 +28,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>123 Shopping Street</li>
-              <li>New York, NY 10001</li>
-              <li>Phone: (555) 123-4567</li>
-              <li>Email: info@shopcart.com</li>
+              <li>Iyana ipaja</li>
+              <li>Lagos, Nigeria</li>
+              <li>Phone: (234) 815-200-3004</li>
+              <li>Email: marvelousnwakobia@gmail.com</li>
             </ul>
           </div>
 
